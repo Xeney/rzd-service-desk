@@ -35,7 +35,6 @@ rzd-service-desk/
 ├── backend/
 │   ├── app.py              # Точка входа Flask-приложения
 │   ├── models.py           # ORM-модели SQLAlchemy
-│   ├── database.py        # Конфигурация базы данных
 │   ├── auth.py           # Модуль аутентификации
 │   ├── requirements.txt   # Зависимости Python
 │   ├── uploads/          # Хранилище файлов
@@ -44,14 +43,16 @@ rzd-service-desk/
 ├── frontend/
 │   ├── src/
 │   │   ├── views/        # Компоненты страниц
-│   ├── components/       # Переиспользуемые компоненты
-│   │   ├── stores/      # Pinia-хранилища
-│   │   ├── assets/     # Стили и статические файлы
-│   │   └── router/   # Конфигурация Vue Router
+│   │   ├── components/   # Переиспользуемые компоненты
+│   │   ├── stores/     # Pinia-хранилища
+│   │   ├── assets/    # Стили и статические файлы
+│   │   └── router/    # Конфигурация Vue Router
 │   ├── dist/            # Собранные файлы для продакшна
+│   ├── vite.config.js    # Конфигурация Vite
 │   └── package.json     # Зависимости Node.js
 │
-└── start.bat          # Скрипт быстрого запуска
+├── start.bat            # Скрипт быстрого запуска
+└── README.md           # Этот файл
 ```
 
 ---
@@ -121,7 +122,7 @@ npm run dev
 
 | Сервис | URL |
 |--------|-----|
-| Frontend | http://localhost:5173 |
+| Frontend | http://localhost:3000 |
 | Backend API | http://localhost:5000 |
 
 ---
